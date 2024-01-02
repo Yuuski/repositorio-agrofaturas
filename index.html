@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar e Remover Conteúdo</title>
+</head>
+<body>
+    <div id="conteudo">
+        <!-- Conteúdo existente -->
+        <p>Conteúdo existente na página.</p>
+    </div>
+
+    <!-- Formulário HTML para entrada de dados -->
+    <form id="formulario">
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" placeholder="Informe o preço">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Informe o email">
+
+        <label for="vencimento">Vencimento:</label>
+        <input type="text" id="vencimento" name="vencimento" placeholder="Informe o vencimento">
+
+        <label for="imagem">Caminho da Imagem:</label>
+        <input type="text" id="imagem" name="imagem" placeholder="Informe o caminho da imagem">
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria" placeholder="Informe a categoria">
+
+        <button type="button" onclick="obterEAdicionarConteudo()">Adicionar Novo Conteúdo</button>
+        <button type="button" id="removerConteudo" style="display: none" onclick="removerUltimoConteudo()">Remover Último Conteúdo</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
